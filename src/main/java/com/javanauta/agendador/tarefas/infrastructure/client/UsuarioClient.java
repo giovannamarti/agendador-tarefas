@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
     @GetMapping
     UsuarioDTO buscaUsuarioPorEmail(@RequestParam("email") String email,
-                                    @RequestHeader("Authorization") String token);
+             j                       @RequestHeader("Authorization") String token);
 
 }
 
