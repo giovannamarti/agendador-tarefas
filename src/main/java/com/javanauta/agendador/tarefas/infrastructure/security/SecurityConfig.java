@@ -33,9 +33,9 @@ public class SecurityConfig {
 
     // Configuração do filtro de segurança
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, UserDetailsServiceImpl userDetailsServiceImpl) throws Exception {
         // Cria uma instância do JwtRequestFilter com JwtUtil e UserDetailsService
-        JwtRequestFilter jwtRequestFilter = new JwtRequestFilter(jwtUtil, userDetailsService);
+        JwtRequestFilter jwtRequestFilter = new JwtRequestFilter(jwtUtil, userDetailsServiceImpl);
 
         http
 
