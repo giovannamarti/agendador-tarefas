@@ -4,7 +4,6 @@ import com.javanauta.agendador.tarefas.business.TarefasService;
 import com.javanauta.agendador.tarefas.business.dto.TarefasDTO;
 import com.javanauta.agendador.tarefas.infrastructure.enums.StatusNotificacaoEnum;
 import lombok.RequiredArgsConstructor;
-import org.apache.tomcat.util.http.parser.Authorization;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
